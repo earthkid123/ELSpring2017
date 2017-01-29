@@ -1,2 +1,2 @@
 # ELSpring2017
-Template for Spring 2017 Embedded Linux class This is a template for students to clone for their work in the class. You should maintain the directory structure
+This is my earthkid123 (N02796097) class repository. All work here is mine,      except other wise noted. WOO EMBEDDED LINUXXXXX :D
