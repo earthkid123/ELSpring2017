@@ -1,2 +1,3 @@
 # Documentation Directory. 
-All your documentation should go here.
+The data sheets and explanation of code will go here
+
