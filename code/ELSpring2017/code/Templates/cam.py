@@ -6,7 +6,6 @@ import time
 from picamera import PiCamera
 from time import sleep
 
-#camera = PiCamera()
 
 #camera.start_preview()
 #sleep(10)
@@ -21,6 +20,7 @@ app = Flask(__name__, template_folder='../Templates')
 #GPIO.setup(1, GPIO.OUT)  
 #pwm2 = GPIO.PWM(1, 50)  
 #pwm2.start(7.5)  
+camera = PiCamera()
 
 
 @app.route("/")
@@ -53,13 +53,10 @@ def reset():
 
 @app.route("/capture", methods = ['POST', 'GET'])
 def capture():
-
-  	
-    camera = PiCamera()
     camera.start_preview()
     sleep(5)
     camera.capture('/home/pi/Desktop/img/i.jpg')
-    camera.stop_preview()
+    camera.stop()
     return render_template('index.html')
    
     
